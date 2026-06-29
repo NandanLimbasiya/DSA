@@ -49,7 +49,7 @@ public:
       adj[it[1]].push_back(it[0]);
     }
     vector<int> ans = topoSort(N, adj);
-    if(ans.size() != N)
+    if (ans.size() != N)
       return {};
     return ans;
   }
@@ -66,7 +66,8 @@ int main()
   Solution sol;
 
   vector<int> ans = sol.findOrder(N, arr);
-  for(auto it:ans){
+  for (auto it : ans)
+  {
     cout << it << " ";
   }
   return 0;
